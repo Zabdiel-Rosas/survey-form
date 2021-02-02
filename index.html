@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./survey-style.css" />
+  <title>Custom Computer Store</title>
+</head>
+
+<body>
+  <main id="main">
+    <header>
+
+      <h1 id="title">Custom Computer Store</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve our service
+      </p>
+
+    </header>
+
+    <form id="survey-form" action="#">
+
+      <!-- Text Fields -->
+      <div class="labels">
+        <label for="name" id="name-label">Full Name</label>
+      </div>
+
+      <div class="input-container">
+        <input class="custom-input" id="name" type="text" placeholder="Insert your name" required>
+      </div>
+
+      <div class="labels">
+        <label for="email" id="email-label">E-mail Address</label>
+      </div>
+
+      <div class="input-container">
+        <input class="custom-input" id="email" type="email" placeholder="Insert your email" required>
+      </div>
+
+      <div class="labels">
+        <label for="number" id="number-label">Age</label>
+      </div>
+
+      <div class="input-container">
+        <input class="custom-input" type="number" id="number" min="10" max="100" placeholder="16">
+      </div>
+
+
+      <!-- First Dropdown -->
+      <div class="labels">
+        <label for="dropdown">Which option best describes your current role?</label>
+      </div>
+
+      <div class="input-container">
+        <select name="roles" id="dropdown">
+          <option disabled selected>Select your current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+        </select>
+      </div>
+
+
+      <!-- Radio Buttons -->
+      <div class="labels">
+        <label>Would you recommend a friend to buy our products?</label>
+      </div>
+
+      <div class="input-container">
+        <input id="definitely" type="radio" name="radio-group" value="definitely">Definitely <br>
+        <input id="probably" type="radio" name="radio-group" value="probably">Probably <br>
+        <input id="not-quite-sure" type="radio" name="radio-group" value="not-quite-sure">Not quite sure <br>
+        <input id="never" type="radio" name="radio-group" value="never">Never <br>
+      </div>
+
+
+      <!-- Second Dropdown -->
+      <div class="labels">
+        <label for="dropdown-2">Did you find what you were looking for?</label>
+      </div>
+
+      <div class="input-container">
+        <select name="options" id="dropdown-2" aria-placeholder="Select your answer">
+          <option disabled selected>Select your answer</option>
+          <option value="yes">Yes I found it</option>
+          <option value="no-stock">You don't have stock</option>
+          <option value="no">No, I didn't</option>
+        </select>
+      </div>
+
+      <!-- Checkbox buttons -->
+      <div class="labels">
+        <label>What kind of products are you most interested in?</label>
+      </div>
+
+      <div class="input-container">
+        <input type="checkbox" name="categories" id="accessories" value="accessories" checked />Accessories <br>
+        <input type="checkbox" name="categories" id="audio" value="audio" />Audio <br>
+        <input type="checkbox" name="categories" id="components" value="components" />Components <br>
+        <input type="checkbox" name="categories" id="storage" value="storage" />Storage <br>
+        <input type="checkbox" name="categories" id="consumables" value="consumables" />Consumables <br>
+        <input type="checkbox" name="categories" id="monitors" value="monitors" />Monitors <br>
+        <input type="checkbox" name="categories" id="software" value="software" />Software
+      </div>
+
+
+      <!-- Text Area -->
+      <div class="labels">
+        <label for="recommendations">Tell us your recommendations:</label>
+      </div>
+      <div class="input-container">
+        <textarea name="recommendations" id="recommendations" cols="30" rows="5" placeholder="Enter your recommendations here..."></textarea>
+      </div>
+
+      <!-- Submit Area -->
+      <div class="btn">
+        <button id="submit">Submit</button>
+      </div>
+
+    </form>
+  </main>
+</body>
+
+</html>
